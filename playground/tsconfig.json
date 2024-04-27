@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "jsx": "preserve",
+    "lib": ["esnext", "DOM"],
+    "baseUrl": ".",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "paths": {
+      "~/*": [
+        "src/*"
+      ],
+      "animations-number": [
+        "../src/index.ts"
+      ]
+    },
+    "resolveJsonModule": true,
+    "types": [
+      "vite/client"
+    ],
+    "strict": true,
+    "strictNullChecks": true,
+    "esModuleInterop": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true
+  }
+}

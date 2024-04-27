@@ -1,0 +1,23 @@
+.animations-number-container {
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+}
+
+.animations-number-enter-active,
+.animations-number-leave-active {
+  transition:
+    opacity 0.2s,
+    transform 0.2s;
+}
+
+.animations-number-enter-from,
+.animations-number-leave-to {
+  opacity: 0;
+  transform: translateY(1.25rem);
+}
+
+.animations-number-enter-to,
+.animations-number-leave-from {
+  opacity: 1;
+  transform: translateY(0);
+}

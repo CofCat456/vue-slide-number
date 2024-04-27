@@ -1,0 +1,73 @@
+{
+  "name": "animations-number",
+  "type": "module",
+  "version": "0.4.0",
+  "packageManager": "pnpm@9.0.6",
+  "description": "Animations number with Vue 3",
+  "author": "CofCat <a25690756@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/antfu/vue-starport#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antfu/vue-starport.git"
+  },
+  "bugs": {
+    "url": "https://github.com/antfu/vue-starport/issues"
+  },
+  "keywords": [
+    "number",
+    "animation",
+    "transition"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.cjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "watch": "tsup --watch",
+    "play": "vite playground --open",
+    "play:build": "vite build playground",
+    "lint": "eslint .",
+    "typecheck": "vue-tsc --noEmit",
+    "test": "vitest",
+    "up": "taze major -I",
+    "prepublishOnly": "nr build",
+    "release": "bumpp --commit --tag --push && pnpm publish"
+  },
+  "dependencies": {
+    "@vueuse/core": "^10.9.0",
+    "vue": "^3.4.25"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.16.0",
+    "@antfu/ni": "^0.21.12",
+    "@types/node": "^20.12.7",
+    "bumpp": "^9.4.0",
+    "eslint": "^9.1.1",
+    "lint-staged": "^15.2.2",
+    "pnpm": "^9.0.6",
+    "simple-git-hooks": "^2.11.1",
+    "taze": "^0.13.7",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.10",
+    "vitest": "^1.5.2",
+    "vue-tsc": "^2.0.14"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}
