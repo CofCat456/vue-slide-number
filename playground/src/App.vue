@@ -3,7 +3,7 @@ import { ref } from 'vue'
 
 import { SlideNumber } from 'vue-slide-number'
 
-const number = ref(100)
+const number = ref(100.5)
 
 function changeNumber(val: number) {
   number.value += val

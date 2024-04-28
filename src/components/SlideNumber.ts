@@ -36,7 +36,7 @@ export const SlideNumber = defineComponent(
           }, {
             default: () => h('span', {
               class: 'animations-number-item',
-              key: idx - 1 < 0 ? n : numberListVal[idx - 1] + n,
+              key: Number.isNaN(Number(n)) ? n : idx - 1 < 0 ? n : numberListVal[idx - 1] + n,
             }, n),
           }),
         )),
