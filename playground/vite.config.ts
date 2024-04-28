@@ -9,7 +9,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '~/': `${path.resolve(__dirname, 'src')}/`,
-      'animations-number': path.resolve(__dirname, '../src/index.ts'),
+      'vue-slide-number': path.resolve(__dirname, '../src/index.ts'),
     },
   },
   plugins: [

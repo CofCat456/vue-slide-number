@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-import { AnimationsNumber } from 'animations-number'
+import { SlideNumber } from 'vue-slide-number'
 
 const number = ref(100)
 
@@ -13,7 +13,7 @@ function changeNumber(val: number) {
 <template>
   <main w-screen font-mono h-dvh grid="~ place-items-center" text="2xl center gray-700 dark:gray-200">
     <div aspect-ratio-square min-w-2xl flex="~ items-center gap-2">
-      <AnimationsNumber flex-1 :number />
+      <SlideNumber flex-1 :number />
 
       <aside text-base flex="~ col gap-5">
         <button type="button" class="btn" @click="changeNumber(1)">

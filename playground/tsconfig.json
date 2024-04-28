@@ -10,7 +10,7 @@
       "~/*": [
         "src/*"
       ],
-      "animations-number": [
+      "vue-slide-number": [
         "../src/index.ts"
       ]
     },

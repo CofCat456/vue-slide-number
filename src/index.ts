@@ -1,3 +1,3 @@
 import './styles/main.css'
 
-export { AnimationsNumber } from './components/AnimationsNumber'
+export { SlideNumber } from './components/SlideNumber'

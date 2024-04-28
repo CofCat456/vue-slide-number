@@ -22,7 +22,14 @@
     "@vitejs/plugin-vue": "^5.0.4",
     "eslint": "^9.1.1",
     "jsdom": "^24.0.0",
-    "unocss": "^0.59.4"
+    "lint-staged": "^15.2.2",
+    "pnpm": "^9.0.6",
+    "simple-git-hooks": "^2.11.1",
+    "typescript": "^5.4.5",
+    "unocss": "^0.59.4",
+    "vite": "^5.2.10",
+    "vitest": "^1.5.2",
+    "vue-tsc": "^2.0.14"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"

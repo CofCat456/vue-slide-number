@@ -1,6 +1,6 @@
 import { Transition, defineComponent, h, ref, watch } from 'vue'
 
-export const AnimationsNumber = defineComponent(
+export const SlideNumber = defineComponent(
   (props) => {
     const numberList = ref<string[]>([])
 

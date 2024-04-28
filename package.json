@@ -1,9 +1,9 @@
 {
-  "name": "animations-number",
+  "name": "vue-slide-number",
   "type": "module",
   "version": "0.4.0",
   "packageManager": "pnpm@9.0.6",
-  "description": "Animations number with Vue 3",
+  "description": "A Vue component for number slide animation",
   "author": "CofCat <a25690756@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/antfu/vue-starport#readme",
@@ -45,7 +45,6 @@
     "release": "bumpp --commit --tag --push && pnpm publish"
   },
   "dependencies": {
-    "@vueuse/core": "^10.9.0",
     "vue": "^3.4.25"
   },
   "devDependencies": {
