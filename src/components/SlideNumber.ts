@@ -9,6 +9,9 @@ export const SlideNumber = defineComponent(
     const isNegative = ref(false)
 
     watch(() => props.number, (newVal, oldVal) => {
+      if (Number.isNaN(Number(newVal)))
+        console.error('SlideNumber: number prop must be a number')
+
       const newValStr = String(newVal)
       const oldValStr = oldVal ? String(oldVal) : ''
       isLenChange.value = oldVal ? newValStr.length !== oldValStr.length : false
