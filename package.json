@@ -6,16 +6,17 @@
   "description": "A Vue component for number slide animation",
   "author": "CofCat <a25690756@gmail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/antfu/vue-starport#readme",
+  "homepage": "https://github.com/CofCat456/vue-slide-number#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/antfu/vue-starport.git"
+    "url": "git+https://github.com/CofCat456/vue-slide-number.git"
   },
   "bugs": {
-    "url": "https://github.com/antfu/vue-starport/issues"
+    "url": "https://github.com/CofCat456/vue-slide-number/issues"
   },
   "keywords": [
     "number",
+    "slide",
     "animation",
     "transition"
   ],
