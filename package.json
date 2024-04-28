@@ -1,7 +1,7 @@
 {
   "name": "vue-slide-number",
   "type": "module",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "packageManager": "pnpm@9.0.6",
   "description": "A Vue component for number slide animation",
   "author": "CofCat <a25690756@gmail.com>",
