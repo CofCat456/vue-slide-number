@@ -1,23 +1,90 @@
+/* ========== container ========== */
 .animations-number-container {
   display: inline-block;
+}
+
+/* ========== container up ========== */
+.animations-number-container-up-enter-active,
+.animations-number-container-up-leave-active {
   transition: all 0.2s ease-in-out;
 }
 
-.animations-number-enter-active,
-.animations-number-leave-active {
-  transition:
-    opacity 0.2s,
-    transform 0.2s;
-}
-
-.animations-number-enter-from,
-.animations-number-leave-to {
+.animations-number-container-up-enter-from {
   opacity: 0;
   transform: translateY(1.25rem);
 }
 
-.animations-number-enter-to,
-.animations-number-leave-from {
-  opacity: 1;
-  transform: translateY(0);
+.animations-number-container-up-leave-to {
+  opacity: 0;
+  transform: translateY(-1.25rem);
+}
+
+.animations-number-container-down-enter-active,
+.animations-number-container-down-leave-active {
+  transition: all 0.2s ease-in-out;
+}
+
+.animations-number-container-down-enter-from {
+  opacity: 0;
+  transform: translateY(-1.25rem);
+}
+
+.animations-number-container-down-leave-to {
+  opacity: 0;
+  transform: translateY(1.25rem);
+}
+
+/* ========== container down ========== */
+.animations-number-container-down-enter-active,
+.animations-number-container-down-leave-active {
+  transition: all 0.2s ease-in-out;
+}
+
+.animations-number-container-down-enter-from {
+  opacity: 0;
+  transform: translateY(-1.25rem);
+}
+
+.animations-number-container-down-leave-to {
+  opacity: 0;
+  transform: translateY(1.25rem);
+}
+
+
+/* ========== item ========== */
+.animations-number-item {
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+}
+
+/* ========== item up ========== */
+.animations-number-item-up-enter-active,
+.animations-number-item-up-leave-active {
+  transition: all 0.2s ease-in-out;
+}
+
+.animations-number-item-up-enter-from {
+  opacity: 0;
+  transform: translateY(1.25rem);
+}
+
+.animations-number-item-up-leave-to {
+  opacity: 0;
+  transform: translateY(-1.25rem);
+}
+
+/* ========== item down ========== */
+.animations-number-item-down-enter-active,
+.animations-number-item-down-leave-active {
+  transition: all 0.2s ease-in-out;
+}
+
+.animations-number-item-down-enter-from {
+  opacity: 0;
+  transform: translateY(-1.25rem);
+}
+
+.animations-number-item-down-leave-to {
+  opacity: 0;
+  transform: translateY(1.25rem);
 }
