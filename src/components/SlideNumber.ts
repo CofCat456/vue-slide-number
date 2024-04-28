@@ -4,9 +4,10 @@ import { checkNumber } from '../utils'
 
 export const SlideNumber = defineComponent(
   (props) => {
+    let id = Date.now()
+
     const numberList = ref<string[]>([])
 
-    const isLenChange = ref(false)
     const isIncrease = ref(false)
     const isNegative = ref(false)
 
@@ -16,7 +17,8 @@ export const SlideNumber = defineComponent(
 
       const newValStr = String(newVal)
       const oldValStr = oldVal ? String(oldVal) : ''
-      isLenChange.value = oldVal ? newValStr.length !== oldValStr.length : false
+      id = oldVal ? newValStr.length !== oldValStr.length ? Date.now() : id : Date.now()
+
       isIncrease.value = oldVal ? newVal > oldVal : false
       isNegative.value = newVal < 0
       const newValList = newValStr.split('')
@@ -32,7 +34,7 @@ export const SlideNumber = defineComponent(
         mode: 'out-in',
       }, {
         default: () => h('span', {
-          key: isLenChange.value ? Date.now() : 'len',
+          key: id,
           class: 'animations-number-container',
         }, numberListVal.map(n =>
           h(Transition, {
