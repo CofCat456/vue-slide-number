@@ -1,5 +1,7 @@
 import { Transition, defineComponent, h, ref, watch } from 'vue'
 
+import { checkNumber } from '../utils'
+
 export const SlideNumber = defineComponent(
   (props) => {
     const numberList = ref<string[]>([])
@@ -9,8 +11,8 @@ export const SlideNumber = defineComponent(
     const isNegative = ref(false)
 
     watch(() => props.number, (newVal, oldVal) => {
-      if (Number.isNaN(Number(newVal)))
-        console.error('SlideNumber: number prop must be a number')
+      if (checkNumber(newVal))
+        return console.error('SlideNumber: number prop must be a number')
 
       const newValStr = String(newVal)
       const oldValStr = oldVal ? String(oldVal) : ''
@@ -39,7 +41,7 @@ export const SlideNumber = defineComponent(
           }, {
             default: () => h('span', {
               class: 'animations-number-item',
-              key: Number.isNaN(Number(n)) ? n : idx - 1 < 0 ? n : numberListVal[idx - 1] + n,
+              key: checkNumber(n) ? n : idx - 1 < 0 ? n : numberListVal[idx - 1] + n,
             }, n),
           }),
         )),
