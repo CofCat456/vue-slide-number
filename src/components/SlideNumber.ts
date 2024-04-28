@@ -34,14 +34,14 @@ export const SlideNumber = defineComponent(
         default: () => h('span', {
           key: isLenChange.value ? Date.now() : 'len',
           class: 'animations-number-container',
-        }, numberListVal.map((n, idx) =>
+        }, numberListVal.map(n =>
           h(Transition, {
             name: isIncrease.value ? 'animations-number-item-down' : 'animations-number-item-up',
             mode: 'out-in',
           }, {
             default: () => h('span', {
               class: 'animations-number-item',
-              key: checkNumber(n) ? n : idx - 1 < 0 ? n : numberListVal[idx - 1] + n,
+              key: n,
             }, n),
           }),
         )),
